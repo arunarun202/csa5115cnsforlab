@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    char s[100], key[] = "qwertyuiopasdfghjklzxcvbnm";
+    int i;
+    printf("Text: ");
+    scanf("%s", s);
+    for(i = 0; s[i] != '\0'; i++)
+    {
+        if(s[i] >= 'a' && s[i] <= 'z')
+            s[i] = key[s[i] - 'a'];
+    }
+    printf("Cipher: %s\n", s);
+    return 0;
+}
