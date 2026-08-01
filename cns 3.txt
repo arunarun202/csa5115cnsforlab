@@ -1,0 +1,22 @@
+#include <stdio.h>
+char m[5][5] = {
+    {'M','O','N','A','R'},
+    {'C','H','Y','B','D'},
+    {'E','F','G','I','K'},
+    {'L','P','Q','S','T'},
+    {'U','V','W','X','Z'}
+};
+int main()
+{
+    int i, j;
+    printf("Playfair Matrix:\n");
+    for(i = 0; i < 5; i++)
+    {
+        for(j = 0; j < 5; j++)
+        {
+            printf("%c ", m[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
